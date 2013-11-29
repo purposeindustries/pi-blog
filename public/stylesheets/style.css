@@ -121,3 +121,150 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+@font-face {
+  font-family: 'wlp-icons';
+  src: url("../fonts/wlp-icons.eot");
+  src: url("../fonts/wlp-icons.eot?#iefix") format('embedded-opentype'), url("../fonts/wlp-icons.woff") format('woff'), url("../fonts/wlp-icons.ttf") format('truetype'), url("../fonts/wlp-icons.svg#wlp-icons") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EnzoOTLight';
+  src: url("../fonts/enzoot-light.eot");
+  src: url("../fonts/enzoot-light.eot") format('embedded-opentype'), url("../fonts/enzoot-light.woff") format('woff'), url("../fonts/enzoot-light.ttf") format('truetype'), url("../fonts/enzoot-light.svg#EnzoOTLight") format('svg');
+}
+@font-face {
+  font-family: 'EnzoOTBold';
+  src: url("../fonts/enzoot-bold.eot");
+  src: url("../fonts/enzoot-bold.eot") format('embedded-opentype'), url("../fonts/enzoot-bold.woff") format('woff'), url("../fonts/enzoot-bold.ttf") format('truetype'), url("../fonts/enzoot-bold.svg#EnzoOTBold") format('svg');
+}
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  color: #333;
+}
+.wrapper {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  overflow: hidden;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4em;
+}
+header.top {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  opacity: 0.9;
+}
+header.top,
+.main,
+footer,
+.author-section {
+  padding: 40px 0;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  float: left;
+}
+.logo h1 a {
+  font-family: 'EnzoOTBold';
+  font-size: 24px;
+  color: #1abc9c;
+}
+.logo h1 a span {
+  font-family: 'EnzoOTLight';
+}
+nav.social-section {
+  float: right;
+}
+nav.social-section ul li {
+  display: inline-block;
+}
+nav.social-section ul li a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: block;
+  padding: 8px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  color: #999;
+}
+h2 {
+  font-family: 'EnzoOTBold';
+}
+.main {
+  margin-top: 100px;
+  background: #f8f8f8;
+}
+.main article.snippet {
+  padding: 40px 0;
+  border-bottom: 2px solid #fff;
+}
+.main article.snippet:last-child {
+  border-bottom: none;
+}
+.main article.snippet h2 {
+  line-height: 2em;
+}
+.main article.snippet h2 a {
+  font-size: 34px;
+  color: #333;
+}
+.main article.snippet h2 a:hover {
+  color: #1abc9c;
+}
+.main article.snippet p.meta {
+  padding: 6px 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+.main article.snippet p.meta span.author {
+  font-weight: bold;
+  color: #1abc9c;
+}
+.main article.snippet p.meta span.category {
+  font-weight: bold;
+  color: #333;
+}
+.main article.snippet p.excerpt {
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+.main .pagination a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: #999;
+}
+.main .pagination a:hover {
+  color: #1abc9c;
+}
+.main .pagination a.prev {
+  float: left;
+}
+.main .pagination a.next {
+  float: right;
+}
