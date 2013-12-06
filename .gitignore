@@ -14,3 +14,6 @@ results
 .DS_Store
 npm-debug.log
 node_modules
+out/
+node_modules/
+.docpad.db
