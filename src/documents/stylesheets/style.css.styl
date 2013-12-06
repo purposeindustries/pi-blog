@@ -1,0 +1,127 @@
+@import 'reset.inc'
+@import 'grid.inc'
+@import 'fonts.inc'
+
+
+body 
+	font-family Georgia, Times, "Times New Roman", serif
+	color #333
+
+
+
+.wrapper
+	max-width 660px
+	margin 0 auto
+	padding 0 20px 0 20px
+	overflow hidden
+
+p, h1, h2, h3, h4
+	line-height 1.4em
+
+header.top 
+	position fixed
+	width 100%
+	background white
+	opacity 0.9
+
+
+header.top, .main, footer, .author-section 
+	padding 40px 0
+
+a 
+	text-decoration none
+
+.logo 
+	float left
+	h1 
+		a 
+			font-family 'EnzoOTBold'
+			font-size 24px;
+			color #1abc9c
+			span 
+				font-family 'EnzoOTLight'
+
+nav.social-section
+	float right
+	ul
+		li
+			display inline-block
+			a
+				font-family "Helvetica Neue", Helvetica, Arial, sans-serif;
+				display block
+				padding 8px
+				text-transform uppercase
+				font-size 11px
+				font-weight bold
+				color #999
+h2 
+	font-family 'EnzoOTBold'
+
+
+.main 
+	margin-top 100px
+	background: #f8f8f8	
+	article.snippet
+		padding 40px 0
+		border-bottom 2px solid #fff
+		&:last-child 
+			border-bottom none
+		h2
+			line-height 2em;
+			a
+				font-size 34px
+				color #333
+				&:hover
+					color #1abc9c
+
+		p.meta 
+			padding 6px 0
+			font-family "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size 12px
+			color #666
+			font-weight 500
+			span.author
+				font-weight bold
+				color #1abc9c
+			span.category
+				font-weight bold
+				color: #333
+
+		p.excerpt 
+			padding-top 20px
+			font-size 18px
+			line-height 1.8em;
+
+	.pagination
+		a 
+			font-family "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform uppercase
+			font-weight bold
+			font-size 12px
+			color #999
+			&:hover 
+				color #1abc9c
+		a.prev 
+			float left
+		a.next
+			float right
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
