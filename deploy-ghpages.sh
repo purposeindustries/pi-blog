@@ -1,6 +1,6 @@
 #!/bin/bash
 rm -rf out
-node_modules/docpad/bin/docpad generate
+node_modules/docpad/bin/docpad --silent generate
 ( cd out
   git init
   git config user.name "Travis-CI"
