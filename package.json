@@ -11,7 +11,8 @@
     "docpad-plugin-marked": "~2.1.2",
     "docpad-plugin-stylus": "~2.5.0",
     "docpad-plugin-jade": "~2.6.1",
-    "docpad-plugin-ignoreincludes": "~2.0.0"
+    "docpad-plugin-ignoreincludes": "~2.0.0",
+    "docpad-plugin-ghpages": "~2.4.1"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
