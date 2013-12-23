@@ -1,4 +1,8 @@
 language: node_js
 node_js:
-  - "0.10"
+- '0.10'
 script: ./node_modules/docpad/bin/docpad deploy-ghpages --env static
+env:
+  global:
+    secure: JRRjhoOYt0IdhuwdZ2W7pUkieKgTo2r+g3BrjNiMn9t//9ot6P4iy53Wp5YI299KXb4qSfwipiu1JDj9GZ0qsiPqy8wkJRn2AFx8OTKJqK/B4oVxNJG0ZAy9FI/xvESkevaQzkiw28zhEEMMqENYnf6ZwdJBacfdNhSOUiOtuA4=
+    GH_REF: github.com/purposeindustries/pi-blog.git
