@@ -1,5 +1,5 @@
 #!/bin/bash
-rm -rf out
+rm -rf out || exit 0;
 node_modules/docpad/bin/docpad --silent generate
 ( cd out
   git init
