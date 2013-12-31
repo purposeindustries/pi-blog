@@ -2,6 +2,13 @@
 @import 'grid.inc'
 @import 'fonts.inc'
 
+border-radius(n)
+	-webkit-border-radius n
+	-moz-border-radius n
+	border-radius n
+
+
+
 body 
 	font-family Georgia, Times, "Times New Roman", serif
 	color #333
@@ -122,12 +129,51 @@ footer
 			font-size 18px
 
 	.authors
-		padding 10px 0
+		padding 20px 0
 
 		.author-snippet
 			display inline-block
-			width 47%
-			padding 20px 10px 10px 0
+			width 43%
+			margin 15px 30px 15px 0
+
+			.profile-image
+				display block
+				width 96px
+				height 96px
+				border-radius(3px)
+
+			.tl
+				background url('/images/profile-tamas-locher.png') no-repeat
+			.ro
+				background url('/images/profile-robert-oroszi.png') no-repeat
+			.bd
+				background url('/images/profile-bence-danyi.png') no-repeat
+			.ts
+				background url('/images/profile-tamas-sari.png') no-repeat
+
+			h4, small
+				font-family "Helvetica Neue", Helvetica, Arial, sans-serif
+				font-size 16px
+				font-weight bold
+				margin-top 10px
+
+			small 
+				font-size 14px
+				color #a4a4a4
+			
+			.bio 
+				font-size 16px
+				padding 10px 0
+
+	.copyright
+		p
+			font-family "Helvetica Neue", Helvetica, Arial, sans-serif
+			font-size 14px
+			font-weight bold
+			color #a4a4a4
+			padding 15px 0
+			
+
 			
 
 
