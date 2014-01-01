@@ -5,4 +5,4 @@ script: npm run-script deploy
 env:
   global:
   - GH_REF: github.com/purposeindustries/pi-blog.git
-  - secure: QZ6CqgLGumvXuEp694OYv+Bi5uWrxsjqjXtQXrOFFi+mPltWC7tw/vgqyIAKbDAWnqnbch8RstPzPTs+UBeI+/0YFUMIKZTK0/wS0UA/EDOoMCBb5rWsFbsRxQlmryeBbItGXoUPUILaM6FAJlE7Qj7p+nYdQ6Lw8bM5a+N4QY8=
+  - secure: nm16VwRupYM8p9tEjyuMuv52G2fhSLCiZXLn0jW1YEJZCUQOaV5stFFT+28ptzKtek5wmbGhXA1IWoMFBIcpLY29Tvz4a/fRLILpi24HbOcomaoiRI3ay4NjQLfZ22Ep3TrQrhxJmQvC+PzqrtSC8tDoCZriAZYXUQzNh5/Cc/8=

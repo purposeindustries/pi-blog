@@ -7,5 +7,5 @@ node_modules/docpad/bin/docpad --silent generate
   git config user.email "dev@purposeindustries.co"
   git add .
   git commit -m "Deployed to Github Pages"
-  git push --force "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
+  git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages >/dev/null
 )
