@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+- '0.10'
+script: npm run-script deploy
+env:
+  global:
+  - GH_REF: github.com/purposeindustries/pi-blog.git
+  - secure: nm16VwRupYM8p9tEjyuMuv52G2fhSLCiZXLn0jW1YEJZCUQOaV5stFFT+28ptzKtek5wmbGhXA1IWoMFBIcpLY29Tvz4a/fRLILpi24HbOcomaoiRI3ay4NjQLfZ22Ep3TrQrhxJmQvC+PzqrtSC8tDoCZriAZYXUQzNh5/Cc/8=
