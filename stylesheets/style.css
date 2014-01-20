@@ -1,0 +1,382 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+@font-face {
+  font-family: 'EnzoOTLight';
+  src: url("../fonts/enzoot-light.eot");
+  src: url("../fonts/enzoot-light.eot") format('embedded-opentype'), url("../fonts/enzoot-light.woff") format('woff'), url("../fonts/enzoot-light.ttf") format('truetype'), url("../fonts/enzoot-light.svg#EnzoOTLight") format('svg');
+}
+@font-face {
+  font-family: 'EnzoOTBold';
+  src: url("../fonts/enzoot-bold.eot");
+  src: url("../fonts/enzoot-bold.eot") format('embedded-opentype'), url("../fonts/enzoot-bold.woff") format('woff'), url("../fonts/enzoot-bold.ttf") format('truetype'), url("../fonts/enzoot-bold.svg#EnzoOTBold") format('svg');
+}
+@font-face {
+  font-family: 'EnzoOTMedi';
+  src: url("../fonts/enzoot-medi.eot");
+  src: url("../fonts/enzoot-medi.eot") format('embedded-opentype'), url("../fonts/enzoot-medi.woff") format('woff'), url("../fonts/enzoot-medi.ttf") format('truetype'), url("../fonts/enzoot-medi.svg#EnzoOTMedi") format('svg');
+}
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  color: #333;
+}
+.wrapper {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  overflow: hidden;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4em;
+}
+header.top {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+}
+header.top,
+.main,
+footer,
+.author-section {
+  padding: 40px 0;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  float: left;
+}
+.logo h1 a {
+  font-family: 'EnzoOTBold';
+  font-size: 24px;
+  color: #1abc9c;
+}
+.logo h1 a span {
+  font-family: 'EnzoOTLight';
+}
+nav.social-section {
+  float: right;
+}
+nav.social-section ul li {
+  display: inline-block;
+}
+nav.social-section ul li a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: block;
+  padding: 8px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  color: #999;
+}
+.main {
+  margin-top: 100px;
+  background: #f8f8f8;
+}
+.main article.snippet {
+  padding: 40px 0;
+  border-bottom: 2px solid #fff;
+}
+.main article.snippet:last-child {
+  border-bottom: none;
+}
+.main article.snippet h2.title {
+  font-family: 'EnzoOTBold';
+  line-height: 1.4em;
+}
+.main article.snippet h2.title a {
+  font-size: 34px;
+  color: #333;
+}
+.main article.snippet h2.title a:hover {
+  color: #1abc9c;
+}
+.main article.snippet p.meta {
+  padding: 6px 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+.main article.snippet p.meta span.author {
+  font-weight: bold;
+  color: #1abc9c;
+}
+.main article.snippet p.meta span.category {
+  font-weight: bold;
+  color: #333;
+}
+.main article.snippet p.excerpt {
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 1.7em;
+}
+.main .pagination a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: #999;
+}
+.main .pagination a:hover {
+  color: #1abc9c;
+}
+.main .pagination a.prev {
+  float: left;
+}
+.main .pagination a.next {
+  float: right;
+}
+.main article.the-article {
+  padding: 40px 0;
+}
+.main article.the-article header p.reading-time {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #a4a4a4;
+  margin: 0;
+}
+.main article.the-article header h1.title {
+  font-family: 'EnzoOTBold';
+  font-size: 38px;
+  line-height: 1.2em;
+}
+.main article.the-article header h1.title a {
+  color: #333;
+}
+.main article.the-article header p.meta {
+  padding: 6px 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+  margin: 0;
+}
+.main article.the-article header p.meta span.author {
+  font-weight: bold;
+  color: #1abc9c;
+}
+.main article.the-article header p.meta span.category {
+  font-weight: bold;
+  color: #333;
+}
+.main article.the-article header h2.hook {
+  font-family: 'EnzoOTMedi';
+  font-size: 22px;
+  line-height: 1.6em;
+  margin: 40px 0;
+  border-left: 8px solid #ebebeb;
+  padding-left: 20px;
+}
+.main article.the-article header p {
+  margin: 30px 0;
+  font-size: 22px;
+  line-height: 1.6;
+}
+footer .cy-info h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #a4a4a4;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+footer .cy-info h1 {
+  font-family: 'EnzoOTBold';
+  font-size: 24px;
+  color: #1abc9c;
+}
+footer .cy-info h1 span {
+  font-family: 'EnzoOTLight';
+}
+footer .cy-info p {
+  padding: 10px 0;
+  font-size: 18px;
+}
+footer .authors {
+  padding: 20px 0;
+}
+footer .authors .author-snippet {
+  vertical-align: top;
+  display: inline-block;
+  width: 43%;
+  margin: 15px 30px 15px 0;
+}
+footer .authors .author-snippet .profile-image {
+  display: block;
+  width: 96px;
+  height: 96px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+footer .authors .author-snippet .tl {
+  background: url("/images/profile-tamas-locher.png") no-repeat;
+}
+footer .authors .author-snippet .ro {
+  background: url("/images/profile-robert-oroszi.png") no-repeat;
+}
+footer .authors .author-snippet .bd {
+  background: url("/images/profile-bence-danyi.png") no-repeat;
+}
+footer .authors .author-snippet .ts {
+  background: url("/images/profile-tamas-sari.png") no-repeat;
+}
+footer .authors .author-snippet h4,
+footer .authors .author-snippet small {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  line-height: 1.6em;
+}
+footer .authors .author-snippet small {
+  font-size: 14px;
+  color: #a4a4a4;
+}
+footer .authors .author-snippet .bio {
+  font-size: 16px;
+  padding: 10px 0;
+}
+footer .copyright p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #a4a4a4;
+  padding: 15px 0;
+}
