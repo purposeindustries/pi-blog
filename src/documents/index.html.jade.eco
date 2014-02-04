@@ -16,24 +16,23 @@ header.top
 
 .main
   .wrapper
-    article.the-article
-      header.entry
-        //p.reading-time estimated reading time ~ 5 min
-        h1.title: a(href='/', title='The User Engagement Death Spiral') The User Engagement Death Spiral &prod;
-        p.meta &#8594; Published on 
-          time(datetime='2013-11-03T12:01') November 3, 2013&nbsp
-          | by&nbsp
-          span.author Oroszi Robert&nbsp
-          span.category in Javascript
-        h2.hook In clear skies they would never misjudge a bank as the tilting of the earth, but with their view restricted to the abstractions of the instrument panel they sometimes do just that: when the airplane banks, they perceive the motion as a movement of the artificial horizon line across the face of the instrument. Reacting instinctively to the indication of motion, they sometimes try to raise the line as if it were a wing.  
-        p What makes an icon a valuable addition to the interface, rather than a mere decorative element? Intuitiveness, aesthetic value, memorability, intercultural perception? While an effective icon would combine many of ...
-        p What makes an icon a valuable addition to the interface, rather than a mere decorative element? Intuitiveness, aesthetic value, memorability, intercultural perception? While an effective icon would combine many of ...
-        P What Langewiesche writes about in The Turn is that there was a transition, in flying, from the daredevil fly-by-feel pilots to those that trusted not their instincts but their instruments, and that it was this slow transition towards understanding the physics of flight and the limitations of our own senses that made air travel safe and turned it into what it is today.
-
-
+    .article-list
+      <% for article in @getCollection('html').toJSON().filter( (a) -> a.title ): %>
+      article.snippet
+        header.entry
+          h2.title: a(href='<%= article.url %>', title='<%= article.title%>') <%= article.title %>
+          p.meta Published on 
+            time(datetime='<%= article.date %>') <%= article.date.toLocaleDateString() %>&nbsp
+            | by&nbsp
+            span.author <%= article.author %>&nbsp
+            span.category in <%= article.category %>
+          p.excerpt <%= article.intro %><% end %>
+          script.
+            console.log(<%- JSON.stringify Object.keys(article) %>)
+            console.log(<%- JSON.stringify article.url %>)
     .pagination
-      a.prev(href='#', title='Previous Article') Previous Articles
-      a.next(href='#', title='Next Article') Next Articles
+      a.prev(href='#', title='Previous Articles') Previous Articles
+      a.next(href='#', title='Next Articles') Next Articles
 
 
 footer
@@ -72,4 +71,4 @@ footer
         p.bio I first met with an alien in 1999. It was on a beautiful summer night in my bedroom. After this everything changed. I fell in love with the blank canvas. Now I'm working on the Fukushima Cleansing Program with the Great White Brotherhood.
 
     .copyright
-      p (c) 2014 Purpose Industries. All rights reserved. Budapest, Hungary 
+      p (c) 2014 Purpose Industries. All rights reserved. Budapest, Hungary	
